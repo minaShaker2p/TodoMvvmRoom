@@ -1,36 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:elevation="4dp"
-    android:layout_marginStart="4dp"
-    android:layout_marginEnd="8dp"
-    android:layout_marginBottom="12dp"
-    app:cardCornerRadius="4dp"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    app:cardBackgroundColor="@android:color/white">
-    <!-- content goes here -->
-    <LinearLayout
+    <data>
+
+        <variable
+            name="hotel"
+            type="com.demo.mina.hotels_demo.data.model.Hotel.HotelEntity" />
+    </data>
+
+    <android.support.v7.widget.CardView xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <ImageView
-            android:id="@+id/image_hotel"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:elevation="4dp"
+        app:cardBackgroundColor="@android:color/white"
+
+        app:cardCornerRadius="4dp">
+        <!-- content goes here -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:background="@drawable/ic_launcher_background"/>
-        <TextView
-            android:id="@+id/tv_hotel_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="10dp"
-            android:paddingStart="8dp"
-            android:textSize="16sp"
-            android:layout_marginBottom="10dp"
-            tools:text="@string/hotel_name"
-            android:paddingEnd="8dp"/>
-    </LinearLayout>
-</android.support.v7.widget.CardView>
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_hotel"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                app:imageUrl="@{hotel.image[0].url}"
+                tools:background="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/tv_hotel_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:text="@{hotel.summary.hotelName}"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:text="@string/hotel_name" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</layout>

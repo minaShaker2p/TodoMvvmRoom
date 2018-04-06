@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">hotels_demo</string>
     <string name="hotel_name">Hotel name</string>
+    <string name="unknown_error">Unecpected error</string>
 </resources>
