@@ -1,5 +1,6 @@
 package com.demo.mina.hotels_demo.data
 
+
 import com.demo.mina.hotels_demo.data.model.Hotel
 import io.reactivex.Observable
 import retrofit2.http.GET
@@ -12,5 +13,5 @@ interface ApiServiceEndpoint {
      * Get the list of the pots from the API
      */
     @GET("hotels_exercise.json")
-    fun getHotels(): Observable<List<Hotel>>
+    fun getHotels(): Observable<Hotel>
 }

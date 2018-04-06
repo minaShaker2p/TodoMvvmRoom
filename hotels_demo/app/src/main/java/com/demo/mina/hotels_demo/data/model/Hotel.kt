@@ -6,9 +6,13 @@ package com.demo.mina.hotels_demo.data.model
 /**
  * Class which provides a model for post
  * @constructor Sets all properties of the post
- * @property userId the unique identifier of the author of the post
- * @property id the unique identifier of the post
- * @property title the title of the post
- * @property body the content of the post
  */
-data class Hotel(val userId: Int, val id: Int, val title: String, val body: String)
+data class Hotel(val hotel: List<HotelEntity>) {
+    inner class HotelEntity(val hotelId: Int, val location: Location, val image: List<Image>, val summary: Summary) {
+        inner class Image(val url: String)
+        inner class Location(val address: String, val latitude: Double, val longitude: Double)
+        inner class Summary(val highRate: Double, val hotelName: String, val lowRate: Double)
+    }
+}
+
+
