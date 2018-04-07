@@ -12,15 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.hotels_list.HotelsListActivity">
+        <activity android:name=".ui.hotels_list.HotelsListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.hotel_details.HotelDetailsActivity" />
+        <activity android:name=".ui.hotel_details.HotelDetailsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+
+            />
         <activity android:name=".ui.hotel_details.ImagePreviewFullScreenActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppNoActionbar"/>
     </application>
 
