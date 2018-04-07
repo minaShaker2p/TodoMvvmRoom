@@ -44,6 +44,10 @@ class HotelListPresenter(hotelListView: HotelsListView) : BasePresenter<HotelsLi
                 )
     }
 
+    fun onHotelItemClicked() {
+        view.showError("test")
+    }
+
     override fun onViewDestroyed() {
         subscription?.dispose()
     }

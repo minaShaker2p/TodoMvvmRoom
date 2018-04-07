@@ -2,4 +2,11 @@
     <string name="app_name">hotels_demo</string>
     <string name="hotel_name">Hotel name</string>
     <string name="unknown_error">Unecpected error</string>
+    <string name="hotel_address">12 Central park ,mountin view ,san fransesco</string>
+    <string name="hotel_prices">6000 vs 11000</string>
+    <string name="hotel_price_placeholder">%s VS %s</string>
+    <string name="txt_low_rate">Low Rate</string>
+    <string name="txt_high_rate">High Rate</string>
+    <string name="low_price_placeholder">%s</string>
+    <string name="high_price_placeholder">%s</string>
 </resources>

@@ -7,6 +7,8 @@
         <variable
             name="hotel"
             type="com.demo.mina.hotels_demo.data.model.Hotel.HotelEntity" />
+
+
     </data>
 
     <android.support.v7.widget.CardView xmlns:tools="http://schemas.android.com/tools"
@@ -28,8 +30,8 @@
             <ImageView
                 android:id="@+id/image_hotel"
                 android:layout_width="match_parent"
-                android:scaleType="fitXY"
                 android:layout_height="wrap_content"
+                android:scaleType="fitXY"
                 app:imageUrl="@{hotel.image[0].url}"
                 tools:background="@drawable/ic_launcher_background" />
 
