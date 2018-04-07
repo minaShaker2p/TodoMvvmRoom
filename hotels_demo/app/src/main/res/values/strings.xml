@@ -9,4 +9,8 @@
     <string name="txt_high_rate">High Rate</string>
     <string name="low_price_placeholder">%s</string>
     <string name="high_price_placeholder">%s</string>
+
+    <string name="title_activity_fullscreen_image_preview">FullscreenImagePreviewActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
