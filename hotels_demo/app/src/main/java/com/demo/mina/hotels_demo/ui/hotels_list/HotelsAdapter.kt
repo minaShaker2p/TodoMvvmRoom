@@ -55,7 +55,7 @@ class HotelsAdapter(var context: Context) : RecyclerView.Adapter<HotelsAdapter.H
      * Updates the list of posts of the adapter
      * @param posts the new list of posts of the adapter
      */
-    fun updatePosts(hotels: List<Hotel.HotelEntity>) {
+    fun updateHotels(hotels: List<Hotel.HotelEntity>) {
         this.hotels = hotels
         notifyDataSetChanged()
     }

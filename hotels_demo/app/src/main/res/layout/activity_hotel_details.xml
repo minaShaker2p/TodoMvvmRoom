@@ -13,6 +13,13 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     tools:context="com.demo.mina.hotels_demo.ui.hotel_details.HotelDetailsActivity">
+    <include
+        android:id="@+id/toolbar_hotels_details_activity"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <ImageView
         android:id="@+id/image_hotel_details"
@@ -22,7 +29,7 @@
         app:imageUrl="@{hotel_details.image[0].url}"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_hotels_details_activity"
         tools:background="@drawable/ic_launcher_background" />
 
     <TextView
@@ -109,6 +116,7 @@
         android:layout_marginTop="8dp"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
+        android:textStyle="bold"
         android:text="@{@string/low_price_placeholder(hotel_details.summary.lowRate)}"
         app:layout_constraintEnd_toStartOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="parent"

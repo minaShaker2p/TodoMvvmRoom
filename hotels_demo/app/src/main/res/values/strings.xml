@@ -13,4 +13,6 @@
     <string name="title_activity_fullscreen_image_preview">FullscreenImagePreviewActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="toolbar_hotels_list_title">Hotels List</string>
+    <string name="toolbar_hotels_details_title">Hotel details</string>
 </resources>
